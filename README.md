@@ -29,9 +29,6 @@ KDFA-Stellar-Harmonics/
 ├── scripts/
 │   ├── validate_heartbeat_stars.py  # Stellar harmonic validation
 │   └── visualize_neutrino.py        # Neutrino visualization
-├── data/
-│   ├── 20211217_HESE-7-5-year-data.zip  # IceCube HESE 7.5-year
-│   └── 20080911_AMANDA_7_Year_Data.zip   # AMANDA 7-year
 ├── MASTER_VALIDATIONS_v1.md         # Complete validation record
 └── README.md
 ```
@@ -56,10 +53,10 @@ Where:
 
 ## Data Sources
 
-- **IceCube**: HESE 7.5-year public data release (2021)
-- **AMANDA**: 7-year point source data (2008)
-- **Kepler**: Heartbeat star catalog (Kirk et al. 2016)
-- **Elliptic Curves**: LMFDB database
+- **IceCube HESE 7.5-year**: [IceCube Public Data](https://icecube.wisc.edu/data-releases/2021/01/all-sky-point-source-icecube-data-years-2008-2018/)
+- **AMANDA 7-year**: [IceCube Data Archive](https://icecube.wisc.edu/science/data/)
+- **Kepler Heartbeat Stars**: [Kirk et al. 2016 Catalog](https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/151/68)
+- **Elliptic Curves**: [LMFDB Database](https://www.lmfdb.org/EllipticCurve/Q/)
 
 ## Requirements
 
