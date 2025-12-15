@@ -26,7 +26,7 @@ This repository contains the complete reproducibility package for the paper:
 ## Repository Structure
 
 ```
-KDFA-Stellar-Harmonics/
+KING-DFA-Stellar-Harmonics/
 ├── paper/
 │   └── KDFA_stellar_paper_v4.md       # Main paper
 ├── scripts/
@@ -158,7 +158,7 @@ The framework fails if:
          A Real-Number Coupling Framework},
   author={King, Jason A.},
   year={2025},
-  note={GitHub: SchoolBusPhysicist/KDFA-Stellar-Harmonics}
+  note={GitHub: SchoolBusPhysicist/KING-DFA-Stellar-Harmonics}
 }
 ```
 
@@ -169,4 +169,4 @@ CC-BY-4.0
 ## Contact
 
 Jason A. King - Independent Researcher, Missouri, USA
-GitHub: https://github.com/SchoolBusPhysicist/KDFA-Stellar-Harmonics
+GitHub: https://github.com/SchoolBusPhysicist/KING-DFA-Stellar-Harmonics
