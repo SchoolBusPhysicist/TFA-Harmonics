@@ -2,6 +2,19 @@
 
 **Universal Harmonic Structure in Stellar Oscillations: A Real-Number Coupling Framework**
 
+```mermaid
+graph LR
+    A["κ = R/(R+S)"] --> B[3 Constants]
+    B --> C["κ* = 1/e"]
+    B --> D["D₂ = 19/13"]
+    B --> E["N₀ = 456"]
+    C & D & E --> F[4 Domain Validation]
+    F --> G["✓ Neutrinos"]
+    F --> H["✓ Stellar"]
+    F --> I["✓ GW"]
+    F --> J["✓ Number Theory"]
+```
+
 ## Overview
 
 This repository contains the complete reproducibility package for the paper:
@@ -22,6 +35,22 @@ This repository contains the complete reproducibility package for the paper:
 | Jupiter Δν | 152 μHz | 155.3 μHz | 97.9% |
 | Saturn p-modes | 608 μHz | ~600 μHz | ~99% |
 | Murmuration node | 1/e = 0.3679 | 0.3627 | 98.6% |
+
+```mermaid
+graph TB
+    subgraph Neutrinos["Neutrinos (IceCube)"]
+        N1["D₂: 96.9% match"]
+        N2["Δm²: 97.2% match"]
+    end
+    subgraph Stellar["Stellar (25,857 systems)"]
+        S1["456d: 2.81× excess"]
+        S2["Heartbeats: 4/4"]
+    end
+    subgraph Other["GW + Math"]
+        G1["LIGO: exact"]
+        G2["Murmuration: 98.6%"]
+    end
+```
 
 ## Repository Structure
 
@@ -68,6 +97,18 @@ Where:
 - D₂ = 19/13 ≈ 1.462 (correlation dimension)
 - N₀ = 168e ≈ 456 (harmonic constant)
 
+```mermaid
+graph TD
+    K["κ = R/(R+S)"] --> K1["κ* = 1/e ≈ 0.368"]
+    K --> D2["D₂ = 19/13 ≈ 1.46"]
+    K --> N["N₀ = 456 = 168e"]
+    K1 --> V[Virial theorem]
+    K1 --> O[Optimal stopping]
+    D2 --> CP[Close packing]
+    N --> NT["PSL(2,7)"]
+    N --> ST[Solar harmonics]
+```
+
 ## Zone Classifications
 
 | System Type | κ Value | Zone | Dynamical State |
@@ -81,6 +122,22 @@ Where:
 - **Zone 1 (κ < 0.35):** Structurally stable — gravity/structure dominates, predictable evolution
 - **Zone 2 (0.35 ≤ κ < 0.65):** Coupled developmental — balanced S-R coupling, sustainable change
 - **Zone 3 (κ ≥ 0.65):** Pre-transitional — dynamics dominate, cycling behavior expected
+
+```mermaid
+graph LR
+    subgraph Z1["Zone 1: κ < 0.35"]
+        A1["Gaia: 0.281"]
+        A2["Heartbeat: 0.167"]
+    end
+    subgraph Z2["Zone 2: 0.35-0.65"]
+        B1["Triples: 0.446"]
+        B2["KOI-54: 0.57"]
+    end
+    subgraph Z3["Zone 3: κ ≥ 0.65"]
+        C1[TRO cycling]
+    end
+    Z1 -->|"0.35"| Z2 -->|"0.65"| Z3
+```
 
 See [docs/ZONE_CLASSIFICATIONS.md](docs/ZONE_CLASSIFICATIONS.md) for details.
 
@@ -96,6 +153,15 @@ The KDFA zone structure predicts that systems crossing κ ≈ 0.65 should **cycl
 2. System overshoots → structure reasserts control
 3. κ drops back below threshold → donor recovers
 4. Cycle repeats until permanent transition or stabilization
+
+```mermaid
+stateDiagram-v2
+    [*] --> Stable: κ < 0.65
+    Stable --> Overshoot: κ crosses 0.65
+    Overshoot --> Recovery: Structure reasserts
+    Recovery --> Stable: κ drops
+    Recovery --> Transition: Permanent change
+```
 
 This cycling behavior is observed in:
 - Contact binaries (Lucy 1976, Robertson & Eggleton 1977)
@@ -134,6 +200,30 @@ All data is publicly available for independent verification:
 
 See [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md) for complete list.
 
+## Data Pipeline
+
+```mermaid
+flowchart LR
+    subgraph Data["Data Sources"]
+        IC[IceCube HESE]
+        KP[Kepler/OGLE]
+        VZ[VizieR catalogs]
+    end
+    subgraph Scripts["Analysis Scripts"]
+        S1[calculate_d2.py]
+        S2[heartbeat_analysis.py]
+        S3[analyze_triple_stars.py]
+    end
+    subgraph Output["Results"]
+        R1["D₂ = 1.495"]
+        R2[456d clustering]
+        R3[κ distributions]
+    end
+    IC --> S1 --> R1
+    KP --> S2 --> R2
+    VZ --> S3 --> R3
+```
+
 ## Requirements
 
 ```
@@ -147,6 +237,13 @@ astroquery>=0.4.0
 ```
 
 ## Usage
+
+```mermaid
+graph LR
+    A[Clone repo] --> B[pip install -r requirements.txt]
+    B --> C[Run scripts/]
+    C --> D[Check RESULTS.md]
+```
 
 ```bash
 # Analyze heartbeat stars (Kirk 2016 catalog)
