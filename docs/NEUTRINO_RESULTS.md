@@ -6,31 +6,29 @@ KDFA validation using IceCube neutrino data.
 
 ## Theoretical Framework
 
-### Tachyonic Threshold Physics
+### ~~Tachyonic Threshold Physics~~ [RETRACTED]
 
-KDFA predicts that correlation dimension D₂ approaches a **tachyonic threshold (1.5)** at high particle energies. As v → c, particles become maximally relational (R-dominated).
+> **⚠️ RETRACTION NOTICE (2025-12-17)**
+>
+> The "tachyonic threshold" concept and energy-dependent D₂ formula below were identified as **AI confabulation** (Grok AI). Monte Carlo analysis confirmed:
+> - γ = 0.2 has NO derivation from KDFA first principles
+> - D₂ does NOT increase monotonically with energy
+> - The apparent energy dependence was muon contamination, not physics
+>
+> **See:** [CONFABULATION_CORRECTIONS.md](CONFABULATION_CORRECTIONS.md)
 
-**Energy-Dependent D₂:**
+~~**Energy-Dependent D₂:**~~
 ```
+[RETRACTED - Formula was fabricated]
 D₂(E) ≈ D₂_0 + (E/E_c)^γ × (1.5 - D₂_0)
+γ ≈ 0.2 ← ARBITRARY, NOT DERIVED
 ```
 
-Where:
-- **D₂_0 = 1.45** — baseline for neutrinos
-- **E_c ~ 1 PeV** — characteristic energy scale
-- **γ ≈ 0.2** — power-law exponent
-- **1.5** — tachyonic threshold (upper limit)
+### What KDFA Actually Predicts
 
-**Physical Interpretation:** Higher energy → more relational (R) character → D₂ → 1.5
+**D₂ = 1.45 ± 0.10** for neutrinos (total sample, any energy)
 
-### Predicted D₂ by Energy
-
-| Energy Range | Predicted D₂ | Physical Regime |
-|--------------|--------------|-----------------|
-| 100 GeV - 1 TeV | 1.48 ± 0.10 | Atmospheric, thermal effects |
-| 1 TeV - 100 TeV | 1.45 ± 0.10 | Baseline regime |
-| 100 TeV - 10 PeV | 1.47 ± 0.08 | Approaching threshold |
-| > 10 PeV | 1.50 ± 0.05 | Near-threshold (v ≈ c) |
+This prediction IS validated. Energy-dependent scaling is NOT.
 
 ---
 
@@ -76,17 +74,21 @@ Where:
 | 0-1 TeV | 1.402 | 0.037 | 325,330 | Atmospheric dominated |
 | 1-10 TeV | 1.325 | 0.042 | 434,390 | Transition region |
 | 10-100 TeV | 1.312 | 0.039 | 178,691 | Transition region |
-| **100 TeV - 10 PeV** | **1.506** | **0.033** | **194,904** | **Astrophysical → tachyonic threshold** |
+| 100 TeV - 10 PeV | 1.506 | 0.033 | 194,904 | Astrophysical (observation only) |
 
 ### Physical Interpretation
 
-- **Low energy (< 1 TeV):** Atmospheric neutrinos, thermal effects → D₂ ≈ 1.40
-- **Mid energy (1-100 TeV):** Transition region, mixed population → D₂ ≈ 1.32
-- **High energy (> 100 TeV):** Astrophysical sources → **D₂ = 1.506 matches tachyonic threshold!**
+> **Note:** Energy stratification is observational data, NOT prediction confirmation.
 
-### Tachyonic Threshold Confirmation
+- **Low energy (< 1 TeV):** Atmospheric neutrinos → D₂ ≈ 1.40
+- **Mid energy (1-100 TeV):** Transition region → D₂ ≈ 1.32
+- **High energy (> 100 TeV):** Astrophysical sources → D₂ ≈ 1.50
 
-The highest energy neutrinos (v ≈ c) reach **exactly D₂ = 1.5** as predicted by KDFA threshold physics.
+### ~~Tachyonic Threshold Confirmation~~ [RETRACTED]
+
+> ❌ **RETRACTED:** The claim that "D₂ = 1.5 matches tachyonic threshold" was AI confabulation.
+> The energy variation is an observation, not a predicted effect.
+> See [CONFABULATION_CORRECTIONS.md](CONFABULATION_CORRECTIONS.md)
 
 ---
 

@@ -71,15 +71,15 @@ Super-K measurement: Δm²_atm = (2.43 ± 0.13) × 10⁻³ eV²
 
 Agreement: 2.8% error. This independent measurement validates the S-R decomposition derived from D₂.
 
-2.3. OPERA Velocity Constraint
+2.3. ~~OPERA Velocity Constraint~~ [RETRACTED]
 
-The framework maps D₂ to velocity: D₂ = 1.5 corresponds to v = c. For D₂ = 1.495:
+> **⚠️ RETRACTION NOTICE (2025-12-17):** The v/c formula below was identified as AI confabulation (Grok AI). The "÷2×1.5" factor has no physical derivation. KDFA predicts κ and D₂, not particle velocities. See docs/CONFABULATION_CORRECTIONS.md
 
-v/c ≈ 1 - (1.5 - D₂)²/(2 × 1.5) ≈ 0.9995 ± 0.0003
+~~The framework maps D₂ to velocity: D₂ = 1.5 corresponds to v = c.~~ [NO DERIVATION EXISTS]
 
-MINOS measurement (2012): v/c = 0.99976 ± 0.00012
+~~v/c ≈ 1 - (1.5 - D₂)²/(2 × 1.5)~~ [RETRACTED - arbitrary formula]
 
-Agreement: Within error bounds.
+**Note:** MINOS and OPERA velocity measurements are independent data; they do not validate or falsify the KDFA framework, which makes no velocity predictions.
 
 2.4. Discovery of the 0.35 Threshold
 

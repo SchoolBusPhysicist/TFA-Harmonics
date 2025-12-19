@@ -15,6 +15,10 @@ graph LR
     F --> J["✓ Number Theory"]
 ```
 
+## Scientific Integrity Notice
+
+> This project uses human-AI collaboration. Some AI-generated claims were identified as confabulation and have been **retracted with full documentation**. See [docs/CONFABULATION_CORRECTIONS.md](docs/CONFABULATION_CORRECTIONS.md) for details. This demonstrates our commitment to scientific integrity over inflated claims.
+
 ## Overview
 
 This repository contains the complete reproducibility package for the paper:
@@ -285,6 +289,7 @@ The framework fails if:
 | [ZONE_CLASSIFICATIONS.md](docs/ZONE_CLASSIFICATIONS.md) | κ values and zone structure for all star types |
 | [GAS_GIANTS.md](docs/GAS_GIANTS.md) | Jupiter and Saturn oscillation analysis |
 | [DATA_SOURCES.md](docs/DATA_SOURCES.md) | All raw data links for reproducibility |
+| [CONFABULATION_CORRECTIONS.md](docs/CONFABULATION_CORRECTIONS.md) | **AI error corrections and retractions** |
 
 ## Citation
 
@@ -312,15 +317,6 @@ This work is licensed under **[CC-BY-4.0](LICENSE)** (Creative Commons Attributi
 - Indicate if changes were made
 
 See [LICENSE](LICENSE) for full terms.
-
-## Citation
-
-If you use this work, please cite:
-
-```
-King, J.A. (2025). Universal Harmonic Structure in Stellar Oscillations:
-A Real-Number Coupling Framework. GitHub: SchoolBusPhysicist/KING-DFA-Stellar-Harmonics
-```
 
 ## Contact
 
