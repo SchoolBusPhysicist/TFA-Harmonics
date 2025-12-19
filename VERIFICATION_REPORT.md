@@ -43,7 +43,7 @@ Cross-document consistency verified using `scripts/check_consistency.py`.
 
 **Fixed Issues:**
 1. ✅ GitHub URL in `paper/stellar_paper.md` line 283
-   - Changed `TFA-Stellar-Harmonics` → `KING-DFA-Stellar-Harmonics`
+   - Changed `TFA-Stellar-Harmonics` → `TFA-Stellar-Harmonics`
 
 ---
 
