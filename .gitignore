@@ -46,3 +46,43 @@ tmp/
 temp/
 *.tmp
 data/HESE-7-year-data-release-main/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Internal drafts and notes (not for public view)
+*DRAFT*.md
+*_DRAFT.md
+PENROSE_RESPONSE*.md
+OUTREACH_PLAN.md
+HUMAN_SYSTEMS*.md
+DATASET_MAPPING.md
+VERSION_COMPARISON.md
+TERMINOLOGY_CLARIFICATION.md
+CHANGELOG.md
+SESSION_*.md
+DISCOVERY_LOG.md
+SESSION_PROGRESS.md
+DATA_SOURCES_LINKS.md
+
+# Old paper versions (keep in .archive/ only)
+paper/KDFA_stellar_paper_v*.md
+paper/Kings_Observed_Constants_Paper.md
+paper/KDFA_discovery_methodology_arxiv.md
+paper/KDFA_Paper_AA_Format_UPDATED.pdf
+paper/KDFA_arXiv_paper.pdf
+
+# Submission archives (keep one final version only)
+*.tar.gz
+paper/submission/
+
+# Empty placeholder files
+paper/aa.cls
